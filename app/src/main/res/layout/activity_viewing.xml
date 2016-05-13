@@ -5,7 +5,7 @@
     <data>
         <variable
             name="viewModel"
-            type="edu.calpoly.android.intentcomposer.IntentComposerViewModel"/>
+            type="edu.calpoly.android.intentcomposer.ViewingViewModel"/>
     </data>
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,27 +14,17 @@
         android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
-        tools:context=".IntentComposerActivity"
         android:orientation="vertical"
+        tools:context=".ViewingActivity"
         android:gravity="center">
 
-        <EditText
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:minWidth="250dp"
-            android:text="@={viewModel.name}"/>
-
-        <Button
-            android:id="@+id/clicky"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Start New Activity"/>
-
-        <Button
-            android:id="@+id/email"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Get Contact Email"/>
+            android:text="@={viewModel.name}"
+            tools:text="Example Text"
+            android:textSize="40sp"/>
 
     </LinearLayout>
 
